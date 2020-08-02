@@ -1,0 +1,48 @@
+.title{
+	text-align:center;
+	font-weight: 200%;
+	font-size: 200%;
+}
+.pname{
+	float:left;
+	position: relative;
+	top:-100px;
+	margin-left:475px;
+}
+.score{
+	position:relative;
+	float:right;
+	top:-150px;
+	margin-right: 30px;
+	/*margin-left: 500px;
+	background-color: white;*/
+}
+.board{
+	position: absolute;
+	text-align: center;
+	top:300px;
+	background-color: white;
+	left:560px;
+}
+.row{
+	float:left;
+	/*padding:20px;*/
+}
+.btn{
+	background-color: #afeeee;
+	padding: 15px 30px;
+}
+.btn:hover{
+	background-color: white;
+}
+.output{
+	position: relative;
+	top:350px;
+	left:-250px;
+	height:250px;
+}
+.rules{
+	position: relative;
+	top:250px;
+	font-size:150%;
+}

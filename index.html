@@ -1,0 +1,90 @@
+<!DOCTYPE html5>
+<html>
+<title>TIC-TAC-TOE</title>
+<head>
+	<link rel="stylesheet" href="tictactoe.css">
+	<script src=""></script>
+</head>
+<body style="background-color: #004ba0;">
+	<div class="title">
+	<h1>TIC-TAC-TOE</h1>
+    </div>
+    <div class="input">
+    	<form>
+    		<label style="font-size: 150%">SELECT NO OF PLAYERS</label><br><br>
+    		<input type="radio" id="sp" value="SINGLE PLAYER">
+    		<label>SINGLE PLAYER</label><br>
+    		<input type="radio" value="MULTIPLAYER">
+       		<label>MULTIPLAYER</label><br>
+
+    	</form>
+    	<button id="plsub" onclick="player()" style="margin-left: 30px; float:left;">SUBMIT</button>
+    	<div class="pname">
+    		<form>
+    		<label style="font-size: 150%;" id="formpname">NAME OF PLAYER-1</label><br>
+    		<input type="text" id="p1name"><br>
+    		<label style="font-size: 150%;" id="formpname">NAME OF PLAYER-2</label><br>
+    		<input type="text" id="p2name"><br>
+    	</form>
+    	<button onclick="funct()" style="margin-left: 50px;">
+    		SUBMIT</button>
+    	</div>
+    </div>
+    <div class="score">
+    	<h3>SCORE</h3>
+    	<input type="text" id="p1n" disabled><br>
+    	<input type="text"  id="p1s" disabled><br>
+    	<input type="text" id="p2n" disabled><br>
+    	<input type="text"  id="p2s" disabled>
+    </div>
+    <div class="board">
+    	<div class="row">
+    		<div class="btn">
+    			<p id="b1" onclick="play(0)">#</p>
+    		</div>
+    		<div class="btn">
+    			<p id="b2" onclick="play(1)">#</p>
+    		</div>
+    		<div class="btn">
+    			<p id="b3" onclick="play(2)">#</p>
+    		</div>
+    	</div>
+    	<div class="row">
+    		<div class="btn">
+    			<p id="b4" onclick="play(3)">#</p>
+    		</div>
+    		<div class="btn">
+    			<p id="b5" onclick="play(4)">#</p>
+    		</div>
+    		<div class="btn">
+    			<p id="b6" onclick="play(5)">#</p>
+    		</div>
+    	</div>
+    	<div class="row">
+    		<div class="btn">
+    			<p id="b7" onclick="play(6)">#</p>
+    		</div>
+    		<div class="btn">
+    			<p id="b8" onclick="play(7)">#</p>
+    		</div>
+    		<div class="btn">
+    			<p id="b9" onclick="play(8)">#</p>
+    		</div>
+    	</div>
+    </div>
+    <div class="output">
+    	
+    		
+    	<p style="font-size: 150%;">RESULT</p>
+    	<input type="text" id="result"  disabled><br><br>
+    	<button onclick="reset()">RESET BOARD</button><tr>
+    	<button onclick="window.location.reload();">RESTART</button>
+
+    </div>
+    <div class="rules">
+    	<p>*CLICK ON RESET BOARD TO PLAY AGAIN</p>
+    	<p>*CLICK ON RESTART TO START AGAIN</p>
+    </div>
+	<script src="tictactoe.js"></script>
+</body>
+</html>
